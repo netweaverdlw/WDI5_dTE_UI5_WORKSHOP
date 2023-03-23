@@ -17,12 +17,12 @@ describe("Input", async () => {
   })
 
   it("should check if the field is writeable", async () => {
-    await browser.screenshot("before-changed-value")
+    //await browser.screenshot("before-changed-value")
 
     const input: unknown = await browser.asControl(selector)
     await (input as Input).setValue("Smith Smithersson")
 
-    await browser.screenshot("after-changed-value")
+    //await browser.screenshot("after-changed-value")
     
     const changedValue = await (input as Input).getValue()
     
